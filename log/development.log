@@ -659,3 +659,23 @@ Served asset /jquery_ujs.js - 304 Not Modified (9ms)
 
 Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-02 18:20:19 -0400
 Served asset /jquery.js - 304 Not Modified (23ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2014-03-02 18:42:54 -0400
+Connecting to database specified by database.yml
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (1.3ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+  Rendered movies/index.html.haml within layouts/application (187.3ms)
+Compiled application.css  (7ms)  (pid 3063)
+Compiled jquery.js  (15ms)  (pid 3063)
+Compiled jquery_ujs.js  (1ms)  (pid 3063)
+Compiled application.js  (325ms)  (pid 3063)
+Completed 200 OK in 1150ms (Views: 1059.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-02 18:43:00 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (36ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-02 18:43:00 -0400
+Served asset /jquery.js - 304 Not Modified (70ms)
