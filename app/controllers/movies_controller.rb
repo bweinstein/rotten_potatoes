@@ -21,7 +21,7 @@ class MoviesController < ApplicationController
     	keys = ratings.keys
     end
     @selected_ratings = keys
-    @movies = Movie.all.find_all{|movie| @selected_ratings.include? movie.rating]}				
+    @movies = Movie.all.find_all{|movie| @selected_ratings.include? movie.rating}				
     session[:ratings] = @selected_ratings
     case type
     when "sortname"
@@ -34,6 +34,7 @@ class MoviesController < ApplicationController
     	@MTitle = ""  
     end
   end    
+  
   def new
     # default: render 'new' template
   end
