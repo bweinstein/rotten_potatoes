@@ -4,6 +4,7 @@
   Include:
   - @all_ratings.each do |rating|
     = rating
+    # borrowed from stack overflow -> http://stackoverflow.com/questions/14641438/get-save-checkbox-values-in-haml-even-if-submit-button-not-selected
     = check_box_tag "ratings[#{rating}]", 1, @selected_ratings.include?(rating)
   = submit_tag 'Refresh', :id => 'ratings_update'
    
